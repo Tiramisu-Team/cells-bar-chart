@@ -5,7 +5,20 @@ class CellsBarChart extends Polymer.Element {
   }
 
   static get properties() {
-    return {};
+    return {
+      data: {
+        type: Array,
+        value: [{
+          "name": "Chrome",
+          "data": [62.74,5]
+      },
+      {
+          "name": "Firefox",
+          "data": [70,5]
+          
+      }]
+      }
+    };
   }
 }
 
