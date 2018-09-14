@@ -1,5 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
 <link rel="import" href="cells-bar-chart-styles.html">
+<link rel="import" href="../highcharts-chart/highcharts-chart.html">
 <!--
 `<cells-bar-chart>` description.
 
@@ -31,7 +32,12 @@ The following custom properties and mixins are available for styling:
     <style include="cells-bar-chart-styles cells-bar-chart-shared-styles"></style>
     <slot></slot>
 
-    <p>Welcome to Cells</p>
+    <highcharts-chart id="barChart" 
+    type="column" data="[[_data]]"
+    color-by-point="" 
+    x-axis='[[_xAxis]]' y-label="[[yLabel]]" subtitle="[[subtitle]]" title="[[title]]" 
+    x-label="[[xLabel]]" label="[[label]]" legend=true >
+  </highcharts-chart>
 
   </template>
   <script src="cells-bar-chart.js"></script>
