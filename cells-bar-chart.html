@@ -1,0 +1,38 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="cells-bar-chart-styles.html">
+<!--
+`<cells-bar-chart>` description.
+
+Example:
+
+```html
+<cells-bar-chart></cells-bar-chart>
+```
+
+## Icons
+
+Since this component uses icons, it will need an [iconset](https://bbva.cellsjs.com/guides/best-practices/cells-icons.html) in your project as an [application level dependency](https://bbva.cellsjs.com/guides/advanced-guides/application-level-dependencies.html). In fact, this component uses an iconset in its demo.
+
+## Styling
+
+The following custom properties and mixins are available for styling:
+
+| Custom property | Description     | Default        |
+|:----------------|:----------------|:---------------|
+| --cells-bar-chart  | Mixin applied to :host     | {}  |
+| --cells-fontDefault  | Font family of :host    | sans-serif  |
+
+@customElement
+@polymer
+@demo demo/index.html
+-->
+<dom-module id="cells-bar-chart">
+  <template>
+    <style include="cells-bar-chart-styles cells-bar-chart-shared-styles"></style>
+    <slot></slot>
+
+    <p>Welcome to Cells</p>
+
+  </template>
+  <script src="cells-bar-chart.js"></script>
+</dom-module>
