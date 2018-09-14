@@ -17,6 +17,10 @@ class CellsBarChart extends Polymer.Element {
           "data": [70,5]
           
       }]
+      },
+      xAxis: {
+        type: Object,
+        value: {categories:["category","lalalallalallaal00"],crosshair: true}
       }
     };
   }
