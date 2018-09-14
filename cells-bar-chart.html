@@ -33,10 +33,10 @@ The following custom properties and mixins are available for styling:
     <slot></slot>
 
     <highcharts-chart id="barChart" 
-    type="column" data="[[data]]"
+    type="column" data="[[_data]]"
     color-by-point="" 
-    x-axis='[[xAxis]]' y-label="Count" subtitle="Drillable Bar Chart" title="Animals" 
-    x-label="category" label="Animal" legend=true >
+    x-axis='[[_xAxis]]' y-label="[[yLabel]]" subtitle="[[subtitle]]" title="[[title]]" 
+    x-label="[[xLabel]]" label="[[label]]" legend=true >
   </highcharts-chart>
 
   </template>

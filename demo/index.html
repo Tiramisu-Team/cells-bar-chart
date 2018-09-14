@@ -14,8 +14,24 @@
     <cells-demo-helper>
       <cells-demo-case heading="Basic" description="A basic example">
         <template>
-          <cells-bar-chart></cells-bar-chart>
-        </template>
+          <cells-bar-chart id="chart"></cells-bar-chart>
+          <script>
+              document.addEventListener('WebComponentsReady', () => {
+                var demo = document.querySelector('cells-bar-chart#chart');
+                demo.detail = {
+                  categories: ["category","lalalallalallaal00"],
+                  data: [{
+                    "name": "Chrome",
+                    "data": [62.74,5]
+                  },
+                  {
+                    "name": "Firefox",
+                    "data": [70,5]  
+                  }]
+                };
+              })
+            </script>
+        </template> 
       </cells-demo-case>
     </cells-demo-helper>
   </body>
